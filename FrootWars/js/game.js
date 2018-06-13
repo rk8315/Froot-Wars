@@ -691,7 +691,7 @@ var box2d = {
 		var gravity = new b2Vec2(0,9.8); //declare gravity as 9.8m/s^2 downward
 		var allowSleep = true; //allow objects that are at rest to fall asleep and be excluded from calculations
 		box2d.world = new b2World(gravity,allowSleep);
-
+		/*
 		//Set up debug draw
 		var debugContext = document.getElementById('debugcanvas').getContext('2d');
 		var debugDraw = new b2DebugDraw();
@@ -701,7 +701,7 @@ var box2d = {
 		debugDraw.SetLineThickness(1.0);
 		debugDraw.SetFlags(b2DebugDraw.e_shapeBit | b2DebugDraw.e_jointBit);
 		box2d.world.SetDebugDraw(debugDraw);
-
+		*/
 		var listener = new Box2D.Dynamics.b2ContactListener;
 		listener.PostSolve = function(contact,impulse){
 			var body1 = contact.GetFixtureA().GetBody();
