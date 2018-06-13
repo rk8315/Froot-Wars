@@ -232,7 +232,7 @@ var game = {
 		}
 	},
 	drawAllBodies:function(){
-		box2d.world.DrawDebugData();
+		// box2d.world.DrawDebugData();
 
 		// Iterate through all the bodies and draw them on the game canvas
 		for(var body = box2d.world.GetBodyList(); body; body = body.GetNext()){
